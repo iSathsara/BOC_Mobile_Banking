@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/trans_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/add_bene_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_radius"
+                android:drawableLeft="@drawable/add_bene"
+                android:paddingLeft="10dp"
+                android:text="@string/add_bene_btn"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/third_prty_boc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_radius"
+                android:drawableLeft="@drawable/third_party_boc"
+                android:paddingLeft="10dp"
+                android:text="@string/add_third_party_boc"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/other_bnk_acc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_radius"
+                android:drawableLeft="@drawable/other_bank_acc"
+                android:paddingLeft="10dp"
+                android:text="@string/other_bank_acc_payment"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/other_bnk_credit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_radius"
+                android:drawableLeft="@drawable/other_bank_credit"
+                android:paddingLeft="10dp"
+                android:text="@string/other_bank_crdt_payment"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bill_pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_radius"
+                android:drawableLeft="@drawable/bill_pay"
+                android:paddingLeft="10dp"
+                android:text="@string/bill_payments"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</D>

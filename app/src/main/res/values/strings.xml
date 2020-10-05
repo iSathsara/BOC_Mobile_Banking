@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">boc_app</string>
+    <string name="add_bene_btn">Add Beneficieries</string>
+    <string name="add_third_party_boc">Third Party BOC Account Payment</string>
+    <string name="other_bank_acc_payment">Other Bank Account Payment</string>
+    <string name="other_bank_crdt_payment">Other Bank Credit Card Payment</string>
+    <string name="bill_payments">Bill Payments</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string-array name="planets_array">
+        <item>Select</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
