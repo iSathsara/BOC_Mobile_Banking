@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar"
@@ -13,14 +14,12 @@
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        >
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:id="@+id/trans_menu_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
@@ -28,12 +27,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/button_radius"
+                android:background="@drawable/transaction_button_design"
                 android:drawableLeft="@drawable/add_bene"
                 android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/add_bene_btn"
                 android:textAlignment="center"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/button_radius"
+                android:background="@drawable/transaction_button_design"
                 android:drawableLeft="@drawable/third_party_boc"
                 android:paddingLeft="10dp"
                 android:text="@string/add_third_party_boc"
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/button_radius"
+                android:background="@drawable/transaction_button_design"
                 android:drawableLeft="@drawable/other_bank_acc"
                 android:paddingLeft="10dp"
                 android:text="@string/other_bank_acc_payment"
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/button_radius"
+                android:background="@drawable/transaction_button_design"
                 android:drawableLeft="@drawable/other_bank_credit"
                 android:paddingLeft="10dp"
                 android:text="@string/other_bank_crdt_payment"
@@ -79,9 +79,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/button_radius"
+                android:background="@drawable/transaction_button_design"
                 android:drawableLeft="@drawable/bill_pay"
                 android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:text="@string/bill_payments"
                 android:textAlignment="center"
                 android:textStyle="bold" />
@@ -89,4 +90,4 @@
         </LinearLayout>
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

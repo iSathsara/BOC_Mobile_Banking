@@ -3,4 +3,7 @@
     <color name="colorPrimary">#FFC300</color>
     <color name="colorSecondary">#FFFFFF</color>
     <color name="colorTertiary">#000000</color>
+    <color name="formBgColor">#FFF58C</color>
+    <color name="proceedBtnColor">#41CE00</color>
+    <color name="cancelBtnColor">#FF1046 </color>
 </resources>

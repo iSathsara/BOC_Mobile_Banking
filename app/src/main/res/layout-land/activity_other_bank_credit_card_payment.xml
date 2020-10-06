@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtherBankCreditCardPayment"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/other_bank_crdt_payment"
+        android:textAlignment="center"
+        android:textColor="@color/colorTertiary"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/obcp_pay_to_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTertiary"
+                android:text="Pay To"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp" />
+
+            <Spinner
+                android:id="@+id/obcp_payTo_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+
+            <TextView
+                android:id="@+id/obcp_pay_from_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTertiary"
+                android:text="Pay From"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/obcp_payFrom_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/obcp_trans_method_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTertiary"
+                android:text="Payment Method"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/obcp_payMethod_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/obcp_amount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTertiary"
+                android:text="Amount (LKR)"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/obcp_amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/obcp_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTertiary"
+                android:text="Description"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/obcp_desc_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:id="@+id/obcp_btn_placement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp" >
+
+                <Button
+                    android:id="@+id/obcp_cont_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/proceed_button_design"
+                    android:layout_marginRight="10dp"
+                    android:text="Continue"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/obcp_cancel_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cancel_button_design"
+                    android:layout_marginRight="10dp"
+                    android:text="Cancel"
+                    android:layout_weight="1"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    />
+
+
+</LinearLayout>
