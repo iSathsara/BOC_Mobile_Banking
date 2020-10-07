@@ -1,6 +1,5 @@
 package com.example.boc_app;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -13,61 +12,44 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class confirmThirdPatyTransaction extends AppCompatActivity {
 
-    private Button otherBankCreditTransBtn;
-    private Button otherBankAccTransBtn;
-    private Button thirdPartyTransaction;
+    private Button confirm,cancel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_confirm_third_paty_transaction);
 
         // setting up toolbar
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        otherBankCreditTransBtn = (Button) findViewById(R.id.other_bnk_credit_btn);
-
-        otherBankCreditTransBtn.setOnClickListener(new View.OnClickListener() {
+        confirm = findViewById(R.id.confirmBtn);
+        confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchOtherBankCreditPay();
+                confirmIntent();
             }
         });
 
-        otherBankAccTransBtn = (Button) findViewById(R.id.other_bnk_acc_btn);
-        otherBankAccTransBtn.setOnClickListener(new View.OnClickListener() {
+        cancel = findViewById(R.id.cancelBtn);
+        cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchOtherBankAccountPay();
-            }
-        });
-
-        thirdPartyTransaction = (Button) findViewById(R.id.third_prty_boc_btn);
-        thirdPartyTransaction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchThirdPartyAccountTransfer();
+                cancelIntent();
             }
         });
     }
 
-    // intent for launch other bank credit card
-    private void launchOtherBankCreditPay(){
-        Intent intent = new Intent(this, OtherBankCreditCardPayment.class);
+    private void confirmIntent(){
+        Intent intent = new Intent(this, SuccessMsgThirdPartyTransaction.class);
         startActivity(intent);
     }
 
-    private void launchOtherBankAccountPay(){
-        Intent intent = new Intent(this, OtherBankAccountPayment.class);
-        startActivity(intent);
-    }
-
-    private void launchThirdPartyAccountTransfer(){
-        Intent intent = new Intent(this, ThirdPartyTransaction.class);
+    private void cancelIntent(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -82,26 +64,25 @@ public class MainActivity extends AppCompatActivity {
     // set logout function
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.logout:
 
                 // implement function here
-                //Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "Logout selected", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(this, Login.class);
                 startActivity(intent);
-
                 return true;
 
             case R.id.help:
 
                 // implement function here
-                Toast.makeText(this,"help selected",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "help selected", Toast.LENGTH_LONG).show();
                 return true;
 
             case R.id.logout2:
 
                 // implement function here
-                //Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "Logout selected", Toast.LENGTH_LONG).show();
                 Intent intent2 = new Intent(this, Login.class);
                 startActivity(intent2);
                 return true;
@@ -109,6 +90,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-
     }
+
 }
