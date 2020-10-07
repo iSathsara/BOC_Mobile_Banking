@@ -14,4 +14,20 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <!-- Third Party Transaction String Values -->
+    <string name="third_party_main">"BOC Account Transfer"</string>
+    <string name="transfer_btn">"Transfer"</string>
+    <string name="desc">"Description"</string>
+    <string name="amount">"Amount(LKR)"</string>
+    <string name="source">"Source"</string>
+    <string name="pay">"Pay"</string>
+    <string name="confirm_transaction">"Confirm Transaction"</string>
+    <string name="confirm">"Confirm"</string>
+    <string name="done">"DONE"</string>
+    <string name="confirm_msg_title">"Transaction Completed!"</string>
+    <string name="confirm_msg">"Your Transaction was completed successfully!"</string>
+    <!-- end -->
+
+
 </resources>

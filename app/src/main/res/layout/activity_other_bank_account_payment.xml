@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_other_bank_account_payment">
+    tools:context=".OtherBankAccountPayment">
 
     <EditText
         android:id="@+id/obcp_amount_et2"
@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/obcp_desc_et2" />
 
     <Button
-        android:id="@+id/obcp_cont_btn2"
+        android:id="@+id/cancelBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
