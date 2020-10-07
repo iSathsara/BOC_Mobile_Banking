@@ -12,51 +12,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+public class OtherBankAccountPayment extends AppCompatActivity {
 
-
-
-public class OtherBankCreditCardPayment extends AppCompatActivity {
-
-    //private Button backToTransMenu;
-    private Button continueButton;
+    private Button backToTransMenu;
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState) {
-
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_bank_credit_card_payment);
+        setContentView(R.layout.activity_other_bank_account_payment);
 
         // setting up toolbar
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        //backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn);
-        continueButton = (Button) findViewById(R.id.obcp_cont_btn);
+        backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn2);
 
         // go back to transaction menu screen
-        /*backToTransMenu.setOnClickListener(new View.OnClickListener() {
+        backToTransMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
-        });*/
-
-        // go to confirm the transaction
-        continueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                gotoConfirm();
-            }
         });
 
-
-    }
-
-    // method to goto confirm transaction
-    private void gotoConfirm(){
-        Intent intent = new Intent(this, OtherBankCreditConfirm.class);
-        startActivity(intent);
     }
 
 
@@ -98,7 +77,5 @@ public class OtherBankCreditCardPayment extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
 }
 
