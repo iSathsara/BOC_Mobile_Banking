@@ -17,6 +17,7 @@
         android:text="@string/other_bank_crdt_payment"
         android:textAlignment="center"
         android:textColor="@color/colorTertiary"
+        android:background="@color/colorSecondary"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
         android:textSize="25dp"
@@ -110,6 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="1000.00"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:inputType="numberDecimal" />
@@ -130,6 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="Ex: settle credit balance"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:inputType="textPersonName" />
@@ -148,18 +151,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/proceed_button_design"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
                     android:text="Continue"
                     android:layout_weight="1"/>
 
-                <Button
-                    android:id="@+id/obcp_cancel_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cancel_button_design"
-                    android:layout_marginRight="10dp"
-                    android:text="Cancel"
-                    android:layout_weight="1"/>
+                <!-- add back button if needed -->
 
 
 

@@ -13,12 +13,16 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
+
+
 public class OtherBankCreditCardPayment extends AppCompatActivity {
 
-    private Button backToTransMenu;
+    //private Button backToTransMenu;
+    private Button continueButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other_bank_credit_card_payment);
 
@@ -27,16 +31,32 @@ public class OtherBankCreditCardPayment extends AppCompatActivity {
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn);
+        //backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn);
+        continueButton = (Button) findViewById(R.id.obcp_cont_btn);
 
         // go back to transaction menu screen
-        backToTransMenu.setOnClickListener(new View.OnClickListener() {
+        /*backToTransMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
+        });*/
+
+        // go to confirm the transaction
+        continueButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoConfirm();
+            }
         });
 
+
+    }
+
+    // method to goto confirm transaction
+    private void gotoConfirm(){
+        Intent intent = new Intent(this, OtherBankCreditConfirm.class);
+        startActivity(intent);
     }
 
 
