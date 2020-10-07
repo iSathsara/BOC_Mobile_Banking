@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Transactions");
 
         otherBankCreditTransBtn = (Button) findViewById(R.id.other_bnk_credit_btn);
+
         otherBankCreditTransBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
