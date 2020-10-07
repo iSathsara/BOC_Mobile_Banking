@@ -12,22 +12,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-
-public class OtherBankCreditCardPayment extends AppCompatActivity {
+public class OtherBankAccountPayment extends AppCompatActivity {
 
     private Button backToTransMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_bank_credit_card_payment);
+        setContentView(R.layout.activity_other_bank_account_payment);
 
         // setting up toolbar
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn);
+        backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn2);
 
         // go back to transaction menu screen
         backToTransMenu.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +77,5 @@ public class OtherBankCreditCardPayment extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
 }
 

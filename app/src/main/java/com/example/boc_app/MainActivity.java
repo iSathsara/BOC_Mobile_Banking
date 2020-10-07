@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button otherBankCreditTransBtn;
+    private Button otherBankAccTransBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +36,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        otherBankAccTransBtn = (Button) findViewById(R.id.other_bnk_acc_btn);
+        otherBankAccTransBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchOtherBankAccountPay();
+            }
+        });
+
     }
 
     // intent for launch other bank credit card
     private void launchOtherBankCreditPay(){
         Intent intent = new Intent(this, OtherBankCreditCardPayment.class);
+        startActivity(intent);
+    }
+
+    private void launchOtherBankAccountPay(){
+        Intent intent = new Intent(this, OtherBankAccountPayment.class);
         startActivity(intent);
     }
 
@@ -58,7 +72,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logout:
 
                 // implement function here
-                Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                //Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, Login.class);
+                startActivity(intent);
+
                 return true;
 
             case R.id.help:
@@ -70,7 +87,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.logout2:
 
                 // implement function here
-                Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                //Toast.makeText(this,"Logout selected",Toast.LENGTH_LONG).show();
+                Intent intent2 = new Intent(this, Login.class);
+                startActivity(intent2);
                 return true;
 
             default:
