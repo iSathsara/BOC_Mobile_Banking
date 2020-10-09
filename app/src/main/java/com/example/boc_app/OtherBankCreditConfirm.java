@@ -88,10 +88,7 @@ public class OtherBankCreditConfirm extends AppCompatActivity {
     }
 
     // intent for back to form
-    private void goBack(){
-        Intent intent = new Intent(this, OtherBankCreditCardPayment.class);
-        startActivity(intent);
-    }
+
 
     // set logout icon in app bar
     @Override

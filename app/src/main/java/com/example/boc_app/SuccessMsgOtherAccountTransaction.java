@@ -12,43 +12,31 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class confirmThirdPatyTransaction extends AppCompatActivity {
+public class SuccessMsgOtherAccountTransaction extends AppCompatActivity {
 
-    private Button confirm,cancel;
+    private Button done;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirm_third_paty_transaction);
+        setContentView(R.layout.activity_success_msg_other_account_transaction);
 
         // setting up toolbar
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        confirm = findViewById(R.id.confirmBtn);
-        confirm.setOnClickListener(new View.OnClickListener() {
+        done = findViewById(R.id.doneBtn2);
+        done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                confirmIntent();
+                doneIntent();
             }
         });
 
-        cancel = findViewById(R.id.confirmBtn);
-        cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                cancelIntent();
-            }
-        });
     }
 
-    private void confirmIntent(){
-        Intent intent = new Intent(this, SuccessMsgThirdPartyTransaction.class);
-        startActivity(intent);
-    }
-
-    private void cancelIntent(){
+    private void doneIntent(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

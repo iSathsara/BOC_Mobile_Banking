@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class OtherBankAccountPayment extends AppCompatActivity {
 
-    private Button backToTransMenu;
+    private Button backToTransMenu,confirm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class OtherBankAccountPayment extends AppCompatActivity {
         getSupportActionBar().setTitle("Transactions");
 
         backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn2);
+        confirm = (Button) findViewById(R.id.confirmBtn4);
 
         // go back to transaction menu screen
         backToTransMenu.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,18 @@ public class OtherBankAccountPayment extends AppCompatActivity {
             }
         });
 
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                confirmOtherBankTrans();
+            }
+        });
+
+    }
+
+    private void confirmOtherBankTrans(){
+        Intent intent = new Intent(this, confirmOtherBankTranssaction.class);
+        startActivity(intent);
     }
 
 

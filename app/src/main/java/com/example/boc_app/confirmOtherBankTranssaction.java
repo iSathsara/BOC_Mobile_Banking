@@ -12,53 +12,46 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+public class confirmOtherBankTranssaction extends AppCompatActivity {
 
-
-
-public class OtherBankCreditCardPayment extends AppCompatActivity {
-
-    //private Button backToTransMenu;
-    private Button continueButton;
+    private Button confirm, cancel;
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState) {
-
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other_bank_credit_card_payment);
+        setContentView(R.layout.activity_confirm_other_bank_transsaction);
 
-        // setting up toolbar
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);
         getSupportActionBar().setTitle("Transactions");
 
-        //backToTransMenu = (Button) findViewById(R.id.obcp_cancel_btn);
-        continueButton = (Button) findViewById(R.id.obcp_cont_btn);
-
-        // go back to transaction menu screen
-        /*backToTransMenu.setOnClickListener(new View.OnClickListener() {
+        confirm = findViewById(R.id.confirmBtn2);
+        confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-            }
-        });*/
-
-        // go to confirm the transaction
-        continueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                gotoConfirm();
+                confirmIntent();
             }
         });
 
+        cancel = findViewById(R.id.cancelBtn2);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cancelIntent();
+            }
+        });
 
     }
 
-    // method to goto confirm transaction
-    private void gotoConfirm(){
-        Intent intent = new Intent(this, OtherBankCreditConfirm.class);
+    private void confirmIntent(){
+        Intent intent = new Intent(this, SuccessMsgOtherAccountTransaction.class);
         startActivity(intent);
     }
 
+    private void cancelIntent(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
     // set logout icon in app bar
     @Override
@@ -98,7 +91,6 @@ public class OtherBankCreditCardPayment extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
 }
 
