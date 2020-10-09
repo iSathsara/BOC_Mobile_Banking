@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".SuccessMsgThirdPartyTransaction"></activity>
+        <activity android:name=".moreActivityFunction"></activity>
+        <activity android:name=".SuccessMsgThirdPartyTransaction" />
         <activity android:name=".confirmThirdPatyTransaction" />
         <activity android:name=".ThirdPartyTransaction" />
-
-        <activity android:name=".OtherBankCreditConfirm"></activity>
+        <activity android:name=".OtherBankCreditConfirm" />
         <activity
             android:name=".OtherBankCreditCardPayment"
             android:exported="true" />
@@ -27,7 +26,6 @@
         <activity
             android:name=".OtherBankAccountPayment"
             android:exported="true" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

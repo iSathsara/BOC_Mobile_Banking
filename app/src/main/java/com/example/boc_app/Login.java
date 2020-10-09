@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
 
     }
     private void MainMenu(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, moreActivityFunction.class);
         startActivity(intent);
     }
 
