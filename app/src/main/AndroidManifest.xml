@@ -9,24 +9,23 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".OtherBankCreditConfirm"></activity>
+
+        <activity android:name=".OtherBankCreditConfirm"
+                  android:exported="true"/>
+
         <activity
             android:name=".OtherBankCreditCardPayment"
             android:exported="true" />
-=======
-        <activity
-            android:name=".Login"
-            android:exported="true" />
-        <activity
-            android:name=".OtherBankCreditCardPayment"
-            android:exported="true" />
+
         <activity
             android:name=".OtherBankAccountPayment"
             android:exported="true" />
 
->>>>>>> 7c1d0e494c02e36da4f32c6f275651d8d3138651
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
