@@ -21,8 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
     private Button otherBankCreditTransBtn;
     private Button otherBankAccTransBtn;
+<<<<<<< HEAD
     private Toolbar toolbar;
 
+=======
+    private Button thirdPartyTransaction;
+>>>>>>> 73e23f71ec215cca9d099959f9dd40883903ba3e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +55,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        thirdPartyTransaction = (Button) findViewById(R.id.third_prty_boc_btn);
+        thirdPartyTransaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchThirdPartyAccountTransfer();
+            }
+        });
     }
 
     // close naviation drawer when clicks on back button
@@ -66,6 +77,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+<<<<<<< HEAD
+=======
+    private void launchThirdPartyAccountTransfer(){
+        Intent intent = new Intent(this, ThirdPartyTransaction.class);
+        startActivity(intent);
+    }
+
+    // set logout icon in app bar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.option_menu, menu);
+        return true;
+    }
+>>>>>>> 73e23f71ec215cca9d099959f9dd40883903ba3e
 
 
     // set logout function
