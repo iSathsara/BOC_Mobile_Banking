@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
         otherBankCreditTransBtn = (Button) findViewById(R.id.other_bnk_credit_btn);
 
+        otherBankCreditTransBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchOtherBankCreditPay();
+            }
+        });
 
         otherBankAccTransBtn = (Button) findViewById(R.id.other_bnk_acc_btn);
         otherBankAccTransBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +56,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // intent for launch other bank credit card
-
+    private void launchOtherBankCreditPay(){
+        Intent intent = new Intent(this, OtherBankCreditCardPayment.class);
+        startActivity(intent);
+    }
 
     private void launchOtherBankAccountPay(){
         Intent intent = new Intent(this, OtherBankAccountPayment.class);
