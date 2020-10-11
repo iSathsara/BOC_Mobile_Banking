@@ -15,9 +15,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
-<<<<<<< HEAD
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <string name="open">Open navigation drawer</string>
+    <string name="close">close navigation drawer</string>
 
     <string-array name="planets_array">
         <item>Select</item>
@@ -30,7 +30,7 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
-=======
+
     <!-- Third Party Transaction String Values -->
     <string name="third_party_main">"BOC Account Transfer"</string>
     <string name="transfer_btn">"Transfer"</string>
@@ -45,6 +45,24 @@
     <string name="confirm_msg">"Your Transaction was completed successfully!"</string>
     <!-- end -->
 
->>>>>>> 73e23f71ec215cca9d099959f9dd40883903ba3e
+    <string-array name="biller_category">
+        <item>Select</item>
+        <item>Electricity</item>
+        <item>Telephone</item>
+        <item>Water</item>
+        <item>Insurance</item>
+        <item>Television</item>
+        <item>Other</item>
+    </string-array>
 
+    <string-array name="customer">
+        <item>Select</item>
+        <item>H.S.D.N Gunasekara</item>
+    </string-array>
+
+    <string-array name="billerType">
+        <item>Select</item>
+        <item>Registered</item>
+        <item>Unregistered</item>
+    </string-array>
 </resources>
