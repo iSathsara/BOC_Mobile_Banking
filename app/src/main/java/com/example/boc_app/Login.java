@@ -23,10 +23,6 @@ public class Login extends AppCompatActivity {
 
         loginbtn = (Button) findViewById(R.id.login);
 
-
-
-
-
         // go back to transaction menu screen
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
