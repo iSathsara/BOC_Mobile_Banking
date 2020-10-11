@@ -6,7 +6,6 @@
     <string name="other_bank_crdt_payment">Other Bank Credit Card Payment</string>
     <string name="bill_payments">Bill Payments</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
@@ -43,6 +42,12 @@
     <string name="done">"DONE"</string>
     <string name="confirm_msg_title">"Transaction Completed!"</string>
     <string name="confirm_msg">"Your Transaction was completed successfully!"</string>
+    <string name="receiver">receiver account number</string>
+    <string name="sourceNum">source account number</string>
+    <string name="offer">Offers</string>
+    <string name="contact">Contact Us</string>
+    <string name="help">Help</string>
+    <string name="logout">Log out</string>
     <!-- end -->
 
 >>>>>>> 73e23f71ec215cca9d099959f9dd40883903ba3e
