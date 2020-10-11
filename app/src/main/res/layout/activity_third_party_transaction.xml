@@ -11,6 +11,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="match_parent"
         tools:context=".ThirdPartyTransaction"
         android:orientation="vertical">
@@ -28,6 +29,52 @@
             android:textColor="@color/colorTertiary"
             android:textSize="25dp"
             android:textStyle="bold" />
+=======
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_amount_tv2" />
+
+    <EditText
+        android:id="@+id/pay_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/receiver"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_to_tv2" />
+
+    <EditText
+        android:id="@+id/source_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/sourceNum"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_from_tv2" />
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
         <ScrollView
             android:layout_width="match_parent"
@@ -55,6 +102,7 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
+<<<<<<< HEAD
                 <EditText
                     android:id="@+id/pay_txt"
                     android:layout_width="match_parent"
@@ -165,6 +213,39 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="15dp" >
+=======
+    <TextView
+        android:id="@+id/obcp_pay_to_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:paddingLeft="20dp"
+        android:text="@string/pay"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/desc_test"
+        android:layout_width="398dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/desc"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_tv2" />
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
                     <Button
                         android:id="@+id/transferBtn"
@@ -188,6 +269,7 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/drawerNavigation"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginEnd="50dp"
@@ -198,7 +280,53 @@
         android:layout_marginRight="131dp"
         app:headerLayout="@layout/drawer_header"
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="20dp"
+        android:text="@string/desc"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/amount_txt" />
+
+    <Button
+        android:id="@+id/transferBtn"
+        android:layout_width="154dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        android:background="@drawable/form_background"
+        android:text="@string/transfer_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_test" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/third_party_main"
+        android:textAlignment="center"
+        android:textColor="@color/colorTertiary"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:itemIconSize = "30sp"

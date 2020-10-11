@@ -17,6 +17,53 @@
         tools:context=".OtherBankCreditConfirm"
         android:orientation="vertical">
 
+<<<<<<< HEAD
+=======
+        <EditText
+            android:id="@+id/amount_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obcp_amount_tv2" />
+
+        <EditText
+            android:id="@+id/pay_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obcp_pay_to_tv2" />
+
+        <EditText
+            android:id="@+id/source_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obcp_pay_from_tv2" />
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
         <TextView
             android:layout_width="match_parent"
@@ -34,10 +81,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
+<<<<<<< HEAD
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+=======
+        <TextView
+            android:id="@+id/obcp_pay_to_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:paddingLeft="20dp"
+            android:text="@string/pay"
+            android:textColor="@color/colorTertiary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <EditText
+            android:id="@+id/desc_test"
+            android:layout_width="395dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/obcp_desc_tv2" />
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -266,6 +346,34 @@
         app:menu="@menu/menu_drawer">
     </com.google.android.material.navigation.NavigationView>
 
+<<<<<<< HEAD
+=======
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="410dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/confirm_transaction"
+            android:textAlignment="center"
+            android:textColor="@color/colorTertiary"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
 </androidx.drawerlayout.widget.DrawerLayout>
 
