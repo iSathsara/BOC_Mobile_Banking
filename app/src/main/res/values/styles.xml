@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorSecondary</item>
@@ -11,5 +11,11 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">21sp</item> <!-- menu item text size-->
+        <item name="android:listPreferredItemHeightSmall">65dp</item><!-- menu item height-->
+        <item name="android:fontFamily">@font/amaranth</item>
+        <item name="android:colorLongPressedHighlight">@color/colorPrimary</item>
+    </style>
 
 </resources>
