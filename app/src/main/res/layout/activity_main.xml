@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/toolbar"  />
 
     <ScrollView
         android:id="@+id/scrollView_tr_menu"
@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <Button
                 android:id="@+id/add_bene_btn"
@@ -87,7 +88,10 @@
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
+
+
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

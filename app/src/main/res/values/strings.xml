@@ -14,6 +14,22 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
 
+<<<<<<< HEAD
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <string-array name="planets_array">
+        <item>Select</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+=======
     <!-- Third Party Transaction String Values -->
     <string name="third_party_main">"BOC Account Transfer"</string>
     <string name="transfer_btn">"Transfer"</string>
@@ -34,5 +50,6 @@
     <string name="logout">Log out</string>
     <!-- end -->
 
+>>>>>>> 73e23f71ec215cca9d099959f9dd40883903ba3e
 
 </resources>

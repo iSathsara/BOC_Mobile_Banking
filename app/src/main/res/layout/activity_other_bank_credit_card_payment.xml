@@ -157,15 +157,6 @@
                     android:text="Continue"
                     android:layout_weight="1"/>
 
-                <Button
-                    android:id="@+id/obcp_cancel_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/cancel_button_design"
-                    android:text="Cancel" />
-
 
             </LinearLayout>
 
