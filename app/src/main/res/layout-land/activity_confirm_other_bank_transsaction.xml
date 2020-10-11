@@ -54,8 +54,8 @@
 
     <EditText
         android:id="@+id/description2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="393dp"
+        android:layout_height="57dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="6dp"
@@ -63,9 +63,8 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="text|numberDecimal"
-        android:textColor="#4CAF50"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/obcp_desc_tv3" />
 
@@ -95,8 +94,6 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="text|numberDecimal"
-        android:textColor="#4CAF50"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,8 +125,6 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="text|numberDecimal"
-        android:textColor="#4CAF50"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,8 +147,8 @@
 
     <EditText
         android:id="@+id/amount2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="395dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="6dp"
@@ -161,8 +156,6 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="#4CAF50"
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/obcp_amount_tv3" />

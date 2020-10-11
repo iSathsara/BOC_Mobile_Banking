@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Login extends AppCompatActivity {
 
     private Button loginbtn;
+    private String username;
+    private String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,10 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         loginbtn = (Button) findViewById(R.id.login);
+
+
+
+
 
         // go back to transaction menu screen
         loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -29,8 +37,28 @@ public class Login extends AppCompatActivity {
 
     }
     private void MainMenu(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+
+        EditText usernameEditText = (EditText) findViewById(R.id.username);
+        EditText passwordEditText = (EditText) findViewById(R.id.password);
+
+        username = usernameEditText.getText().toString();
+        password = passwordEditText.getText().toString();
+        if (username.matches("")||password.matches("")) {
+            // Show Toast
+            Toast.makeText(this, "You did not enter a username or password", Toast.LENGTH_SHORT).show();
+            // Show Error on edittext
+            usernameEditText.setError("You must enter a username");
+            passwordEditText.setError("You must enter a password");
+            return;
+        }
+        if (username.matches("admin")&& password.matches("1234")) {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "You successfully logged in to the system", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show();
+
     }
 
 

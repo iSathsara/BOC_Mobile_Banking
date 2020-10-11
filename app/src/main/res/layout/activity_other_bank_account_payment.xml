@@ -7,10 +7,14 @@
     tools:context=".OtherBankAccountPayment">
 
     <EditText
-        android:id="@+id/obcp_amount_et2"
+        android:id="@+id/obammount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +25,7 @@
         android:id="@+id/obcp_amount_tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:paddingLeft="20dp"
         android:text="Amount (LKR)"
         android:textColor="@color/colorTertiary"
@@ -29,22 +33,13 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_payFrom_spinner2" />
-
-    <Spinner
-        android:id="@+id/obcp_payFrom_spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_from_tv2" />
+        app:layout_constraintTop_toBottomOf="@+id/obsource" />
 
     <TextView
         android:id="@+id/obcp_pay_from_tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:paddingLeft="20dp"
         android:text="Source"
         android:textColor="@color/colorTertiary"
@@ -52,16 +47,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_payTo_spinner2" />
-
-    <Spinner
-        android:id="@+id/obcp_payTo_spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_to_tv2" />
+        app:layout_constraintTop_toBottomOf="@+id/obpay" />
 
     <TextView
         android:id="@+id/obcp_pay_to_tv2"
@@ -78,10 +64,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/obcp_desc_et2"
-        android:layout_width="402dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="10dp"
+        android:id="@+id/obdescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +82,7 @@
         android:id="@+id/obcp_desc_tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:paddingLeft="20dp"
         android:text="Description"
         android:textColor="@color/colorTertiary"
@@ -100,20 +90,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_amount_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obammount" />
 
     <Button
         android:id="@+id/obcp_cancel_btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         android:layout_weight="1"
         android:background="@drawable/cancel_button_design"
         android:text="Cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
 
     <Button
         android:id="@+id/confirmBtn4"
@@ -121,12 +111,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="17dp"
         android:layout_weight="1"
         android:background="@drawable/proceed_button_design"
         android:text="Continue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
 
     <TextView
         android:id="@+id/textView"
@@ -153,4 +143,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/obpay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_to_tv2" />
+
+    <EditText
+        android:id="@+id/obsource"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_from_tv2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,16 +10,35 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class confirmOtherBankTranssaction extends AppCompatActivity {
 
     private Button confirm, cancel;
+    private String pay,source,amount,description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_other_bank_transsaction);
+
+        pay = getIntent().getStringExtra("Pay");
+        source = getIntent().getStringExtra("Source");
+        amount = getIntent().getStringExtra("Amount");
+        description = getIntent().getStringExtra("Description");
+
+        EditText payText = (EditText) findViewById(R.id.pay2);
+        EditText sourceText = (EditText) findViewById(R.id.source2);
+        EditText amountText = (EditText) findViewById(R.id.amount2);
+        EditText descriptionText = (EditText) findViewById(R.id.description2);
+
+        payText.setText(pay);
+        sourceText.setText(source);
+        amountText.setText(amount);
+        descriptionText.setText(description);
+
+
 
         Toolbar trans_toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(trans_toolbar);

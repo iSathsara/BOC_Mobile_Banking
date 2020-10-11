@@ -7,7 +7,7 @@
     tools:context=".activity_other_bank_account_payment">
 
     <EditText
-        android:id="@+id/obcp_amount_et2"
+        android:id="@+id/obammount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -29,10 +29,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_payFrom_spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/obsource" />
 
     <Spinner
-        android:id="@+id/obcp_payFrom_spinner2"
+        android:id="@+id/obsource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -52,10 +52,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_payTo_spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/obpay" />
 
     <Spinner
-        android:id="@+id/obcp_payTo_spinner2"
+        android:id="@+id/obpay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/obcp_desc_et2"
+        android:id="@+id/obdescription"
         android:layout_width="402dp"
         android:layout_height="53dp"
         android:layout_marginTop="10dp"
@@ -100,7 +100,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_amount_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obammount" />
 
     <Button
         android:id="@+id/obcp_cancel_btn2"
@@ -113,7 +113,7 @@
         android:background="@drawable/cancel_button_design"
         android:text="Cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
 
     <Button
         android:id="@+id/confirmBtn4"
@@ -126,7 +126,7 @@
         android:background="@drawable/proceed_button_design"
         android:text="Continue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_et2" />
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
 
     <TextView
         android:id="@+id/textView"
