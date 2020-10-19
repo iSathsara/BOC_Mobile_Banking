@@ -119,6 +119,45 @@
             app:layout_constraintTop_toBottomOf="@+id/obcp_desc_tv2" />
 >>>>>>> a9aae0709844abe712f07311a39f990d06371ff5
 
+<<<<<<< HEAD
+        <TextView
+            android:id="@+id/obcp_desc_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="20dp"
+            android:text="@string/desc"
+            android:textColor="@color/colorTertiary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/amount_txt" />
+
+        <Button
+            android:id="@+id/confirmBtn4"
+            android:layout_width="154dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@android:string/cancel"
+            app:layout_constraintStart_toEndOf="@+id/confirmBtn"
+            app:layout_constraintTop_toBottomOf="@+id/desc_test" />
+
+        <Button
+            android:id="@+id/confirmBtn4"
+            android:layout_width="154dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/form_background"
+            android:text="@string/confirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc_test" />
+=======
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -145,6 +184,7 @@
                             android:textSize="22sp"
                             android:textStyle="bold"
                             app:fontFamily="@font/acme" />
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
 
                         <TextView
                             android:id="@+id/tp_payto_detail"

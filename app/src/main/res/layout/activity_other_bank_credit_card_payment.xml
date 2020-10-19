@@ -101,6 +101,23 @@
                     android:id="@+id/obcp_amount_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/proceed_button_design"
+                    android:text="Continue"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/obcp_cancel_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cancel_button_design"
+                    android:text="Cancel" />
+=======
                     android:textColor="@color/colorTertiary"
                     android:text="Amount (LKR)"
                     android:textSize="20dp"
@@ -148,6 +165,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="15dp" >
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
 
                     <Button
                         android:id="@+id/obcp_cont_btn"

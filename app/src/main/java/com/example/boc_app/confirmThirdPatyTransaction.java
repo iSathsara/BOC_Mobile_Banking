@@ -120,7 +120,7 @@ public class confirmThirdPatyTransaction extends AppCompatActivity {
             }
         });
 
-        cancel = findViewById(R.id.cancelBtn);
+        cancel = findViewById(R.id.confirmBtn);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

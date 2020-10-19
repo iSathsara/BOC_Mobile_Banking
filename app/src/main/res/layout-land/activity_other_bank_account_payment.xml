@@ -7,14 +7,91 @@
     tools:context=".OtherBankAccountPayment"
     android:id="@+id/drawer">
 
+<<<<<<< HEAD
+    <EditText
+        android:id="@+id/obammount"
+=======
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".OtherBankAccountPayment"
         android:orientation="vertical">
 
+<<<<<<< HEAD
+    <TextView
+        android:id="@+id/obcp_amount_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:text="Amount (LKR)"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obsource" />
+
+    <Spinner
+        android:id="@+id/obsource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_from_tv2" />
+
+    <TextView
+        android:id="@+id/obcp_pay_from_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:text="Source"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obpay" />
+
+    <Spinner
+        android:id="@+id/obpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_pay_to_tv2" />
+
+    <TextView
+        android:id="@+id/obcp_pay_to_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:text="Pay"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/obdescription"
+        android:layout_width="402dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obcp_desc_tv2" />
+=======
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -76,6 +153,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/obcp_payTo_spinner2" />
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
 
                 <Spinner
                     android:id="@+id/obcp_payFrom_spinner2"
@@ -179,6 +257,67 @@
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/drawerNavigation"
         android:layout_width="match_parent"
+<<<<<<< HEAD
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:text="Description"
+        android:textColor="@color/colorTertiary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obammount" />
+
+    <Button
+        android:id="@+id/obcp_cancel_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/cancel_button_design"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
+
+    <Button
+        android:id="@+id/confirmBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_weight="1"
+        android:background="@drawable/proceed_button_design"
+        android:text="Continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obdescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/other_bank_acc_payment"
+        android:textAlignment="center"
+        android:textColor="@color/colorTertiary"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+=======
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginEnd="50dp"
@@ -189,6 +328,7 @@
         android:layout_marginRight="131dp"
         app:headerLayout="@layout/drawer_header"
         app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

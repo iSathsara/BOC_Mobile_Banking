@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
+        <activity android:name=".moreActivityFunction"></activity>
+        <activity android:name=".SuccessMsgThirdPartyTransaction" />
+        <activity android:name=".confirmThirdPatyTransaction" />
+        <activity android:name=".confirmOtherBankTranssaction"  android:exported="true" />
+        <activity android:name=".ThirdPartyTransaction" />
+        <activity android:name=".OtherBankCreditConfirm" />
+        <activity
+            android:name=".OtherBankCreditCardPayment"
+            android:exported="true" />
+=======
 
         <activity
             android:name=".dashboard"
@@ -35,13 +46,23 @@
 
         <activity android:name=".moreActivityFunction"></activity>
 
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity
+            android:name=".OtherBankAccountPayment"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+=======
 
+>>>>>>> e914613b3e831825789596df267bfb24e3869824
     </application>
 
 </manifest>
